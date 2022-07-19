@@ -32,16 +32,15 @@ class EngageApi(object):
     def __init__(self):
         self.ENGAGE_USER = ''   # You should load these from environment vars e.g. os.getenv('ENGAGE_USER')
         self.ENGAGE_PASSWORD = ''   # You should load these from environment vars e.g. os.getenv('ENGAGE_PASSWORD')
-        self.engage_url = 'your_engage_school_url' # This is the root URL your Engage sits on
+        self.engage_url = 'your_engage_school_url'  # This is the root URL your Engage sits on
         self.base_url = self.engage_url + '/api/v1/'
         self.token_url = self.engage_url + '/api/gettoken'
         self.session = Session()
         self.token = self.get_token()
         headers = {"Authorization": "Bearer %s" % self.token}
-        self.school = ''
         self.session.headers = headers
-        self.pupils_url = self.base_url + "personaldetails/getcurrentpupilinfo/%s" % self.school
-        self.contacts_url = self.base_url + "personaldetails/getcontactinfo/%s" % self.school
+        self.pupils_url = self.base_url + "personaldetails/getcurrentpupilinfo/"
+        self.contacts_url = self.base_url + "personaldetails/getcontactinfo/"
 
     def get_token(self):
         """
