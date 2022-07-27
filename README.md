@@ -3,7 +3,7 @@
 Here you'll find a bunch of classes which will get you started with authentication and basic 
 record fetching from major school management systems.
 
-There are clients in here for Edumate, TASS, Sentral and Engage. I have also added a useful MSSQL
+There are clients in here for Edumate, TASS, Sentral, Engage and PCSchool. I have also added a useful MSSQL
 client when you have to run raw queries and want to process data in Python.
 
 Below is the list of URLs where you can find the API documentation for Aussie school management systems. 
@@ -13,7 +13,7 @@ Below is the list of URLs where you can find the API documentation for Aussie sc
 * Synergetic - https://developer.synergetic.net.au/api.html
 * Sentral - http://development.sentral.com.au/
 * Engage - The docs are behind the login. You need to contact Engage to see them.
-* PCSchool - More info coming
+* PCSchool - https://pcschool.net/
 * Civica, SchoolPro, SchoolEdge SAS2000, Denbeigh, Compass, Maze - No API or not public
 
 Please note that this code has been extrapolated from the various projects I've been working on 
